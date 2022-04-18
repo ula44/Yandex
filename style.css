@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 95%;
+    height: 60px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.yandex img{
+    width: 30px;
+    margin: 4px;
+    cursor: pointer;
+}
+.yandex{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+h1{
+    font-size: 34px;
+}
+.catalog{
+    width: 120px;
+    background-color: rgb(255, 204, 0);
+    border: none;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.catalog h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    margin-left: 10px;
+}
+.center{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+.catalog:hover{
+    background-color: rgb(255, 187, 0);
+}
+.yandex img:nth-child(2){
+    border-radius: 100px;
+}
+.top{
+    display: flex;
+    align-items: center;
+}
+
+input{
+    width: 700px;
+    padding: 10px;
+    font-size: 17px;
+    border: 2px solid rgb(255, 204, 0);
+    border-radius: 6px;
+    outline: none;
+}
+
+.find{
+    width: 100px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 17px;
+    transform: translateX(-101px);
+    background-color: rgb(255, 204, 0);
+    border: none;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    cursor: pointer;
+}
+.box{
+    border: none;
+    background: none;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.features{
+    transform: translateX(-30px);
+    display: flex;
+    align-items: center;
+}
+.image__box{
+    
+}
+.plus{
+    font-size: 12px;
+    color: white;
+    font-weight: 600;
+    background: linear-gradient(90deg, rgb(0, 132, 255), rgb(198, 0, 198), rgb(255, 255, 0)) ;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+span{
+    opacity: .7;
+    font-weight: 100;
+}
+.Log__In{
+    margin-left: 40px;
+    border: none;
+    border-radius: 5px;
+    width: 70px;
+    height: 42px;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;    
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+#center{
+    margin-left: 90px;
+}
+.hrefs{
+    margin-right: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(94, 94, 94);
+    transition: .4s ease;
+}
+.moscow{
+    font-size: 18px;
+    font-weight: 100;
+    transition: .4s ease;
+    cursor: pointer;
+}
+.moscow:hover{
+    color: rgb(255, 47, 47);
+}
+.hrefs:hover{
+    color: rgb(255, 47, 47);
+}
+.href:hover{
+    color: rgb(255, 47, 47);
+}
+.href{
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+#left{
+    display: flex;
+    align-items: center;
+}
+/*  creating Monitors  */
+.main{
+    width: 90%;
+    height: 270px;
+    margin: 0 auto;
+    transform: translateY(70px);
+}
+.monitors{
+    display: flex;
+    border: 1px solid rgb(191, 191, 191);
+    width: 100%;
+    height: 100%;
+}
+.left__image{
+    width: 18%;
+    height: 100%;
+}
+#top{
+    width: 90%;
+}
+.otziv{
+    color: white;
+}
+#top a{
+    text-decoration: none;
+    font-size: 24px;
+    transition: .1s ease;
+    color: blue;
+    cursor: pointer;
+}
+#top{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+#top a:hover{
+    color: red;
+}
+.center__side{
+    width: 60%;
+    height: 100%;
+}
+#bal{
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    margin-right: 30px;
+}
+p{
+    cursor: pointer;
+}
+.how{
+    font-size: 16px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+#otziv:hover{
+    color: red;
+}
+#otziv{
+    display: flex;
+    align-items: center;
+    transition: .4s ease;
+}
+.right__side{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.params{
+    margin-left: 6px;
+}
+.inter{
+    display: flex;
+    margin: 10px;
+    font-size: 14px;
+    color: black;
+    opacity: 1;
+}
+#parametrs{
+    margin-top: 40px;
+}
+.left__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imager {
+    width: 170px;
+    height: 70px;
+}
+#right_side{
+    display: flex;
+    flex-direction: column;
+}
+#right_side .image1{
+    margin-bottom: 10px;
+    display: none;
+    cursor: pointer;
+    transition: .4s ease;
+}
+#right_side .image2{
+    display: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: .4s ease;
+}
+#left_side{
+    display: flex;
+    flex-direction: column;
+}
+.to__basket{
+    background-color: rgb(255, 187, 0);
+    border: none;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.price{
+    margin-top: 20px;
+    font-size: 28px;
+    color: black;
+    opacity: 1;
+    transition: .1s ease;
+}
+.price:hover{
+
+}
+.dost{
+    margin-top: 15px;
+    opacity: .6;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+#left_side a{
+    text-decoration: none;
+    color: blue;
+    margin-top: 80px;
+    cursor: pointer;
+}
+
+#left_side a:hover{
+    color: red;
+}

@@ -1,0 +1,114 @@
+// Creating Element
+// Array to Elemnts
+
+let arr = [
+    {
+        id: Math.random(),
+        name: '48.9" Монитор Samsung C49HG90DMI, 3840x1080, 144 Гц, *VA, черный',
+        otziv: 4.2,
+        how: 32,
+        screen: '3440x1440 (21:9), изогнутый',
+        typeOfMatrix: '*VA',
+        chastota: '144 Гц; отклик: 4 мс',
+        interfeys: 'вход HDMI x 2, вход DisplayPort x 2',
+        price: '84 333 Р',
+        src: 'https://avatars.mds.yandex.net/get-mpic/4428744/img_id6127648283417084115.jpeg/orig',
+    },
+    
+]
+
+createFromArr(arr)
+
+
+function createFromArr(arr){
+    for (let item of arr) {
+        // Create
+        let monitor = document.createElement('div')
+        let left__image = document.createElement('div')
+        let img  = document.createElement('img')
+        let center__side  = document.createElement('div')
+        let top = document.createElement('div')
+        let a = document.createElement('a')
+        let otziv = document.createElement('div')
+        let bal = document.createElement('div')
+        let span__otziv = document.createElement('span')
+        let how_many =  document.createElement('p') 
+        let reviews =  document.createElement('p') 
+        let parametrs = document.createElement('div')
+        let right = document.createElement('div')
+        let left_side =  document.createElement('div')
+        let price = document.createElement('span')
+        let dost = document.createElement('span')
+        let btn = document.createElement('button')
+        let left__side_a = document.createElement('a')
+        let right_side = document.createElement('div')
+        let image1 = document.createElement('img')
+        let image2 = document.createElement('img')
+
+        // Adding values to created elements
+        monitor.className = 'monitors'
+
+
+        img.setAttribute('src', item.src)
+        top.id = 'top'
+        left__image.className = 'left__image'
+        otziv.id = 'otziv'
+        bal.id = 'bal'
+        span__otziv.className = 'otziv'
+        img.className = 'imager'
+        a.innerHTML = item.name
+        span__otziv.innerHTML = item.otziv
+        reviews.innerHTML = 'Reviews'
+        parametrs.className = 'parametrs'
+        price.innerHTML = item.price
+        price.className = 'price'
+        dost.innerHTML = 'Доставка Яндекса, завтра'
+        dost.className = 'dost'
+        btn.innerHTML = 'To Basket'
+        btn.className = 'to__basket'
+        how_many.className = 'how'
+        how_many.innerHTML = item.how
+
+        right.className = 'right__side'
+        left_side.id = 'left_side'
+        right_side.id = 'right_side'
+        left__side_a.innerHTML = '6 for 80 000 Р'
+        image1.setAttribute('src', './assets/outline_favorite_border_black_24dp.png')  
+        image2.setAttribute('src', './assets/outline_menu_black_24dp.png')  
+        image1.className = 'image1'
+        image2.className = 'image2'
+        // appending
+        let main = document.querySelector('.main')
+        main.append(monitor)
+        monitor.append(left__image)
+        left__image.append(img)
+        monitor.append(center__side)
+        center__side.append(top)
+        center__side.append(otziv)
+        otziv.append(bal)
+        bal.append(span__otziv)
+        otziv.append(how_many)
+        otziv.append(reviews)
+        top.append(a)
+        monitor.append(right)
+        right.append(left_side)
+        left_side.append(price)
+        left_side.append(dost)
+        left_side.append(btn)
+        left_side.append(left__side_a)
+        right.append(right_side)
+        right_side.append(image1)
+        right_side.append(image2)
+        
+        
+        main.onmouseenter = () => {
+                image1.style.display = 'block'
+                image2.style.display = 'block'
+                main.onmouseleave = () => {
+                    image1.style.display = 'none'
+                    image2.style.display = 'none'        
+                }
+        }
+    }
+
+}
