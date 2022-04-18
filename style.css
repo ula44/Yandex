@@ -258,6 +258,8 @@ p{
     opacity: 1;
 }
 #parametrs{
+    display: flex;
+    flex-direction: column;
     margin-top: 40px;
 }
 .left__image{

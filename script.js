@@ -44,11 +44,23 @@ function createFromArr(arr){
         let right_side = document.createElement('div')
         let image1 = document.createElement('img')
         let image2 = document.createElement('img')
+        let screen = document.createElement('span')
+        let type_of_matrix = document.createElement('span')
+        let chastota = document.createElement('span')
+        let interfeys = document.createElement('span')
 
         // Adding values to created elements
         monitor.className = 'monitors'
 
 
+        screen.className = 'screen'
+        type_of_matrix.className = 'type_of_matrix'
+        chastota.className = 'chastota'
+        interfeys.className = 'interfeys'
+        screen.innerHTML = `Screen: ${item.screen}`
+        type_of_matrix.innerHTML = `Type of matrix: ${item.typeOfMatrix}`
+        chastota.innerHTML = `Chastota: ${item.chastota}`
+        interfeys.innerHTML = `Interfeys: ${item.interfeys}`
         img.setAttribute('src', item.src)
         top.id = 'top'
         left__image.className = 'left__image'
@@ -59,7 +71,7 @@ function createFromArr(arr){
         a.innerHTML = item.name
         span__otziv.innerHTML = item.otziv
         reviews.innerHTML = 'Reviews'
-        parametrs.className = 'parametrs'
+        parametrs.id = 'parametrs'
         price.innerHTML = item.price
         price.className = 'price'
         dost.innerHTML = 'Доставка Яндекса, завтра'
@@ -68,7 +80,6 @@ function createFromArr(arr){
         btn.className = 'to__basket'
         how_many.className = 'how'
         how_many.innerHTML = item.how
-
         right.className = 'right__side'
         left_side.id = 'left_side'
         right_side.id = 'right_side'
@@ -77,6 +88,7 @@ function createFromArr(arr){
         image2.setAttribute('src', './assets/outline_menu_black_24dp.png')  
         image1.className = 'image1'
         image2.className = 'image2'
+
         // appending
         let main = document.querySelector('.main')
         main.append(monitor)
@@ -85,10 +97,16 @@ function createFromArr(arr){
         monitor.append(center__side)
         center__side.append(top)
         center__side.append(otziv)
+        center__side.append(parametrs)
+        parametrs.append(screen)
+        parametrs.append(type_of_matrix)
+        parametrs.append(chastota)
+        parametrs.append(interfeys)
         otziv.append(bal)
         bal.append(span__otziv)
         otziv.append(how_many)
         otziv.append(reviews)
+
         top.append(a)
         monitor.append(right)
         right.append(left_side)
